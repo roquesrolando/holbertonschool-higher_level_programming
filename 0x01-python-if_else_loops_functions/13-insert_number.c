@@ -1,16 +1,13 @@
 #include "lists.h"
-
 /**
- * insert_node - Inserts a node into a linled list
- * @head: the head
- * @number: the number to insert
- *
- * Return: the new single linked list
+ * insert_node - insert node
+ * @head: head of list
+ * @number: numbe rto ins
+ * Return: NULL on fail addres of new node on succ
  */
-
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint *h, *new;
+	listint_t *h, *new;
 
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
@@ -23,9 +20,10 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = new;
 		return (new);
 	}
+
 	while (h && h->next && h->next->n < number)
 		h = h->next;
-
+	
 	new->next = h->next;
 	h->next = new;
 	return (new);
