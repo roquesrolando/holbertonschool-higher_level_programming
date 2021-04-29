@@ -4,9 +4,12 @@ if __name__ == "__main__":
     arg = sys.argv
     length = len(arg) - 1
 
-    if length >= 1:
+    if length > 1:
         print(length, "arguments:")
         for d in range(1, length + 1):
             print("{:d}: {}".format(d, arg[d]))
     elif length == 0:
-        print("0 arguments")
+        print("0 argument.")
+    elif length == 1:
+        print(length, "argument:")
+        print("1: {}".format(arg[1]))
