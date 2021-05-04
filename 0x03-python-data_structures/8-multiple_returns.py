@@ -4,4 +4,3 @@ def multiple_returns(sentence):
     if sentence is not None:
         return length, sentence[0]
     return length, None
-
