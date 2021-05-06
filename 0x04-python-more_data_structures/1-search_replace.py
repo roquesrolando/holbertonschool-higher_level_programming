@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    if search > len(my_list) - 1:
-        return my_list
     if my_list is not None:
         new = my_list.copy()
         for i in my_list:
