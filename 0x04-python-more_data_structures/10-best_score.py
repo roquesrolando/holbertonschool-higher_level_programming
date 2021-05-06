@@ -9,4 +9,3 @@ def best_score(a_dictionary):
             score = j
             top = i
     return top
-
