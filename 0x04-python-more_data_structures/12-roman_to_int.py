@@ -12,8 +12,7 @@ def roman_to_int(roman_string):
             if i == lttr:
                 if prev <= num:
                     value += num
-                    prev = num
                 else:
                     value -= num
-                    prev = num
+                prev = num
     return value
