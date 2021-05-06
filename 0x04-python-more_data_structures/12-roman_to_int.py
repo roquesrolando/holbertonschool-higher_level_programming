@@ -9,5 +9,10 @@ def roman_to_int(roman_string):
     for i in roman_string:
         for j, z in roman.items():
             if i == j:
+                if value != 0 and value < z:
+                    value -= z
+                    if value < 0:
+                        value *= -1
+                    continue
                 value += z
     return value
