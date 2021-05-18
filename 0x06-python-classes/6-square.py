@@ -42,12 +42,12 @@ class Square:
 
     def area(self):
         '''This method calculates the area of a square'''
-        return self.__size ** 2
+        return self.size ** 2
 
     def my_print(self):
         '''Prints the square'''
-        size = self.__size
-        x, y = self.__position
+        size = self.size
+        x, y = self.position
 
         if size == 0:
             print("")
