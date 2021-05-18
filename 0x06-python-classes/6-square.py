@@ -52,7 +52,7 @@ class Square:
         if size == 0:
             print("")
         else:
-            if y <= 0:
+            if y >= 0:
                 for i in range(y):
                     print("")
             for j in range(size):
