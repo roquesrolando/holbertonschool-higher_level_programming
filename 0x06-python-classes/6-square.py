@@ -7,8 +7,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         '''This method creates a new instance of Square'''
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -52,8 +52,7 @@ class Square:
         if size == 0:
             print("")
         else:
-            if y >= 0:
-                for i in range(y):
+            for i in range(y):
                     print("")
             for j in range(size):
                 for k in range(x):
