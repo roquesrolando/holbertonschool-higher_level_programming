@@ -1,0 +1,81 @@
+	Import
+	>>> f = __import__('5-text_indentation').text_indentation
+
+---------------------------
+case 1:
+
+	>>> f("   Hi: My name is Naruto.  What's your name?Pleasure to meet you. ")
+	Hi:
+	<BLANKLINE>
+	My name is Naruto.
+	<BLANKLINE>
+	What's your name?
+	<BLANKLINE>
+	Pleasure to meet you.
+	<BLANKLINE>
+
+---------------------------
+case 2:
+
+	>>> f("Hi")
+	Hi
+
+---------------------------
+case 3:
+
+	>>> f("  Hi: Naruto  ")
+	Hi:
+	<BLANKLINE>
+	Naruto
+
+---------------------------
+case 4:
+
+	>>> f(None)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+---------------------------
+case 5:
+
+	>>> f(["hey"])
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+---------------------------
+case 6:
+
+	>>> f(15)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+---------------------------
+case 7:
+
+	>>> f("")
+
+
+---------------------------
+case 8:
+
+	>>> f("Hey:: Uzumaki?.")
+	Hey:
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	Uzumaki?
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+
+-----------------------------
+case 9:
+
+	>>> f()
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
