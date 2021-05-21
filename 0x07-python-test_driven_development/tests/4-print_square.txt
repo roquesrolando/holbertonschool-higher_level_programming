@@ -4,8 +4,6 @@
 ---------------------
 case 1:
 
-	Square size 3
-
 	>>> f(3)
 	###
 	###
@@ -14,15 +12,11 @@ case 1:
 ---------------------
 case 2:
 
-	Square size 0
-
 	>>> f(0)
 
 
 ---------------------
 case 3:
-
-	Square size less than ZERO
 
 	>>> f(-5)
 	Traceback (most recent call last):
@@ -32,8 +26,6 @@ case 3:
 ---------------------
 case 4:
 
-	Square size type not an int
-
 	>>> f("Hola")
 	Traceback (most recent call last):
 	...
@@ -41,8 +33,6 @@ case 4:
 
 ---------------------
 case 5:
-
-	Square size is NoneType
 
 	>>> f(None)
 	Traceback (most recent call last):
@@ -52,8 +42,6 @@ case 5:
 ---------------------
 case 6:
 
-	Square size is a positive float
-
 	>>> f(5.5)
 	Traceback (most recent call last):
 	...
@@ -61,8 +49,6 @@ case 6:
 
 ---------------------
 case 7:
-
-	function called withouth arguments
 
 	>>> f()
 	Traceback (most recent call last):

@@ -3,19 +3,19 @@
 
 ---------------------------
 case 1:
-	Correct Format for 2 strings
+
 	>>> f("Osvaldo", "Cruz")
 	My name is Osvaldo Cruz
 
 ---------------------------
 case 2:
-	Only giving first_name
+
 	>>> f("Osvaldo")
 	My name is Osvaldo 
 
 ---------------------------
 case 3:
-	first_name is not a string
+
 	>>> f(100)
 	Traceback (most recent call last):
 	...
@@ -23,7 +23,7 @@ case 3:
 
 ---------------------------
 case 4:
-	last_name is not a string
+
 	>>> f("Osvaldo", 100)
 	Traceback (most recent call last):
 	...
@@ -31,13 +31,13 @@ case 4:
 
 ----------------------------
 case 5:
-	first and last names are empty strings
+
 	>>> f("")
 	My name is  
 
 ----------------------------
 case 6:
-	Nor first nor last name is a string
+
 	>>> f(["Hola"], 10)
 	Traceback (most recent call last):
 	...
@@ -45,7 +45,7 @@ case 6:
 
 ----------------------------
 case 7:
-	Missing two args
+
 	>>> f()
 	Traceback (most recent call last):
 	...
