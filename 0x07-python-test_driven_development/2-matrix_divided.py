@@ -24,7 +24,7 @@ def matrix_divided(matrix, div):
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
 
-    if div is 0:
+    if div == 0:
         raise ZeroDivisionError("division by zero")
 
     new.append(list(map(lambda x: list(map(lambda k: round(k / div,
