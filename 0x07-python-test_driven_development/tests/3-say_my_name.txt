@@ -4,14 +4,14 @@
 ---------------------------
 case 1:
 
-	>>> f("Rolando", "Roques")
-	My name is Rolando Roques
+	>>> f("Naruto", "Uzumaki")
+	My name is Naruto Uzumaki
 
 ---------------------------
 case 2:
 
-	>>> f("Rolando")
-	My name is Rolando 
+	>>> f("Naruto")
+	My name is Naruto 
 
 ---------------------------
 case 3:
@@ -24,7 +24,7 @@ case 3:
 ---------------------------
 case 4:
 
-	>>> f("Rolando", 100)
+	>>> f("Naruto", 100)
 	Traceback (most recent call last):
 	...
 	TypeError: last_name must be a string
