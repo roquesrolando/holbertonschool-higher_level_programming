@@ -1,4 +1,4 @@
-	Importing the function
+	Import
 	>>> f = __import__('2-matrix_divided').matrix_divided
 
 -----------------------
@@ -7,7 +7,7 @@ case 1:
 	>>> f(None, 1)
 	Traceback (most recent call last):
 	...
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	TypeError: matrix must be a matrix (list of lists) of integers/float
 
 -----------------------
 case 2:
@@ -19,7 +19,7 @@ case 2:
 	>>> f(m, 1)
 	Traceback (most recent call last):
 	...
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	TypeError: matrix must be a matrix (list of lists) of integers/float
 
 -----------------------
 case 3:
@@ -32,7 +32,7 @@ case 3:
 	>>> f(m, 1)
 	Traceback (most recent call last):
 	...
-	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	TypeError: matrix must be a matrix (list of lists) of integers/float
 
 -----------------------
 case 4:
@@ -74,7 +74,6 @@ case 6:
 -----------------------
 case 7:
 
-	Divisor argument is ZERO float
 	>>> m = [
 	...  [1, 2.5, 3],
 	...  [4, -100.5, 6],
@@ -89,12 +88,11 @@ case 8:
 
 	Matrix has no elements
 	>>> f([[]], 1)
-	[[]]
+	[[[]]]
 
 -----------------------
 case 9:
 
-	function called with 1 argument
 	>>> f([[15, 16]])
 	Traceback (most recent call last):
 	...
@@ -103,11 +101,7 @@ case 9:
 ------------------------
 case 10:
 
-	function called with no args
 	>>> f()
 	Traceback (most recent call last):
 	...
 	TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
-
--------------------------
-
