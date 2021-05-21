@@ -1,17 +1,17 @@
-	Importing function to test
+	Import
 	>>> f = __import__('3-say_my_name').say_my_name
 
 ---------------------------
 case 1:
 
-	>>> f("Osvaldo", "Cruz")
-	My name is Osvaldo Cruz
+	>>> f("Rolando", "Roques")
+	My name is Rolando Roques
 
 ---------------------------
 case 2:
 
-	>>> f("Osvaldo")
-	My name is Osvaldo 
+	>>> f("Rolando")
+	My name is Rolando 
 
 ---------------------------
 case 3:
@@ -24,7 +24,7 @@ case 3:
 ---------------------------
 case 4:
 
-	>>> f("Osvaldo", 100)
+	>>> f("Rolando", 100)
 	Traceback (most recent call last):
 	...
 	TypeError: last_name must be a string
