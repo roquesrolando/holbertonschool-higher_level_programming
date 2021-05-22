@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     '''funtion divides all elements of a matrix of the same size'''
 
     new = []
-    Error = "matrix must be a matrix (list of lists) of integers/float"
+    Error = "matrix must be a matrix (list of lists) of integers/floats"
     Error2 = "Each row of the matrix must have the same size"
     if type(matrix) is not list or len(matrix) is 0:
         raise TypeError(Error)
