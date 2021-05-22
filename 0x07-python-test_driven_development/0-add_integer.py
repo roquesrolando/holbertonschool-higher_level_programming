@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
 '''function that adds two integer'''
+
 
 def add_integer(a, b=98):
     '''add integers if not integers return error'''
