@@ -5,7 +5,7 @@
 case 1:
 
 	>>> f("   Hi: My name is Naruto.  What's your name?Pleasure to meet you. ")
-	Hi:
+	   Hi:
 	<BLANKLINE>
 	My name is Naruto.
 	<BLANKLINE>
@@ -24,9 +24,9 @@ case 2:
 case 3:
 
 	>>> f("  Hi: Naruto  ")
-	Hi:
+	  Hi:
 	<BLANKLINE>
-	Naruto
+	Naruto  
 
 ---------------------------
 case 4:
