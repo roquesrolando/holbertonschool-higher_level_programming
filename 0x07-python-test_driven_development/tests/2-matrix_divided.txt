@@ -7,7 +7,7 @@ case 1:
 	>>> f(None, 1)
 	Traceback (most recent call last):
 	...
-	TypeError: matrix must be a matrix (list of lists) of integers/float
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 -----------------------
 case 2:
