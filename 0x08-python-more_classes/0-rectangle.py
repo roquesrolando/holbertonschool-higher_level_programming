@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''Defines a rectangle'''
+
 
 class Rectangle:
-    x = None
+    '''function of a rectangle'''
+    pass
