@@ -27,7 +27,7 @@ ValueError: age must be greater than 0
 case 3:
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("distance", -4)
+>>> bg.integer_validator("distance", -1)
 Traceback (most recent call last):
 ...
 ValueError: distance must be greater than 0
@@ -37,7 +37,7 @@ ValueError: distance must be greater than 0
 case 4:
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("5")
+>>> bg.integer_validator("3")
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
@@ -57,7 +57,7 @@ TypeError: integer_validator() missing 2 required positional arguments: 'name' a
 case 6:
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("name", 4.5)
+>>> bg.integer_validator("name", 2.5)
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
@@ -76,5 +76,5 @@ Exception: area() is not implemented
 case 8:
 
 >>> bg = BaseGeometry()
->>> bg.integer_validator("int", 12)
->>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("int", 1)
+>>> bg.integer_validator("int", 2)
