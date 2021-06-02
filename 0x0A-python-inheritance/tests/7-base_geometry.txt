@@ -78,9 +78,3 @@ case 8:
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("int", 12)
 >>> bg.integer_validator("width", 89)
-
---------------------------------------------------------------
-case 9:
-
->>> bg = BaseGeometry()
->>> bg.integer_validator("distance", 30)
