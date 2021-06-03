@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+'''adds all argument'''
+
 
 import json
 import sys
