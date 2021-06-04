@@ -6,8 +6,6 @@ def pascal_triangle(n):
     '''returns a list of pascal triangle'''
 
     lists = [[]]
-    if n == 0:
-        return
 
     for x in range(1, n):
         pascal = []
