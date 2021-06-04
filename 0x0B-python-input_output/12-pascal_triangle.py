@@ -5,7 +5,7 @@
 def pascal_triangle(n):
     '''returns a list of pascal triangle'''
 
-    lists = [[]]
+    lists = [[1]]
 
     for x in range(1, n):
         pascal = []
