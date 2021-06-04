@@ -7,8 +7,7 @@ def pascal_triangle(n):
 
     lists = [[]]
     if n == 0:
-        lists.append(1)
-        return lists
+        return
 
     for x in range(1, n):
         pascal = []
