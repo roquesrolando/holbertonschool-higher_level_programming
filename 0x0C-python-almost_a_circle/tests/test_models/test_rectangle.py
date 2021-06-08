@@ -50,7 +50,7 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.rect4.area(), 2000)
 
     def test_set_width(self):
-        '''Test setter method width'''
+        '''Test setter for width'''
 
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             rect5 = Rectangle("string", 1)
