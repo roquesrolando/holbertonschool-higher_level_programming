@@ -21,7 +21,6 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
                                                        self.width, self.height)
 
-
     @property
     def width(self):
         '''getter for width'''
