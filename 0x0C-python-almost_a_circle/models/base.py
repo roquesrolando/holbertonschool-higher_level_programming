@@ -15,6 +15,7 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
     @staticmethod
     def to_json_string(dictionaries):
         '''return the JSON string'''
@@ -60,4 +61,3 @@ class Base:
         except:
             return []
         return [cls.create(**x) for x in j_list]
-
