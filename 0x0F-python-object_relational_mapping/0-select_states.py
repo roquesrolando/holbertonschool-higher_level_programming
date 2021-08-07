@@ -3,6 +3,7 @@
 import sys
 import MySQLdb
 
+
 user = sys.argv[1]
 passwd = sys.argv[2]
 database = sys.argv[3]
