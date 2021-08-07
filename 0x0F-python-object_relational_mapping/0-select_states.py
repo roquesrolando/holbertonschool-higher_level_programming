@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """List all states from the database"""
+
+
 import sys
 import MySQLdb
-
 
 user = sys.argv[1]
 passwd = sys.argv[2]
