@@ -13,8 +13,4 @@ class State(Base):
     __tablename__ = 'states'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
-
-    def __repr__(self):
-        """Method for string representation"""
-        return "State: {}, {}".format(self.name, self.id)
+    name = Column(String(128), nullable=False)
