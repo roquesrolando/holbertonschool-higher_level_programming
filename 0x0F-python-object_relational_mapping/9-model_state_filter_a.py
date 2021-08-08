@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module lists State objects"""
 import sys
-from model_state import State
+from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -12,6 +12,7 @@ if __name__ == "__main__":
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
                            .format(user, passwd, database),
                            pool_pre_ping=True)
+    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
 
