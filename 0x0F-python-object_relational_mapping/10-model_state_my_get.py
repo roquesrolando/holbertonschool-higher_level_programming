@@ -18,8 +18,8 @@ if __name__ == "__main__":
     session = Session()
 
     states = session.query(State).filter(text("name='{}'".format(name)))
-    for instance in states:
-        if instance is None:
-            print('Not found')
-        else:
-            print("{}".format(instance.id))
+    state = states.first()
+    if state is None:
+        print('Not found')
+    else:
+        print(state.id)
