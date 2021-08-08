@@ -19,7 +19,7 @@ if __name__ == "__main__":
 
     states = session.query(State).filter(text("name='{}'".format(name)))
     for instance in states:
-        if states is None:
+        if instance is None:
             print('Not found')
         else:
             print("{}".format(instance.id))
