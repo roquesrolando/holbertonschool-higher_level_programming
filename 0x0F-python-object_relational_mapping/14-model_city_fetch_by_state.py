@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module lists State objects"""
 import sys
-from model_state import State
+from model_state import Base, State
 from model_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State, City).order_by(City.id)
+    states = session.query(State, City).join(City)
     for x, j in states.all():
         print("{}: {} {}".format(x.name, j.id, j.name))
     session.close()
