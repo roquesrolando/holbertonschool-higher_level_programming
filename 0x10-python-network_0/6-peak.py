@@ -11,10 +11,10 @@ def find_peak(list_of_integers):
     if length == 0:
         return None
     if length == 1:
-        return l[1]
+        return list_of_integers[1]
     if list_of_integers[0] > list_of_integers[1]:
         return list_of_integers[0]
-    if list_of_integers[-1] > list_of_integers[-2]:
+    if list_of_integers[length - 1] > list_of_integers[length - 2]:
         return list_of_integers[-1]
 
     for idx in range(1, length):
