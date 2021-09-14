@@ -8,10 +8,10 @@ request(process.argv[2], (err, res, body) => {
   }
   const films = JSON.parse(body).results;
   let count = 0;
-  const antilles = '18';
+  const antilles = '18/';
   for (const film of films) {
     for (const character of film.characters) {
-      if (character.slice(37, 39) === antilles) {
+      if (character.slice(-3) === antilles) {
         count++;
       }
     }
