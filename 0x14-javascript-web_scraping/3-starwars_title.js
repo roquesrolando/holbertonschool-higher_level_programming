@@ -7,6 +7,6 @@ request(starwars + process.argv[2], (err, res, body) => {
     console.error(err);
     return;
   }
-  body = JSON.parse(body);
-  console.log(body.title);
+  const movie = JSON.parse(body);
+  console.log(movie.title);
 });
