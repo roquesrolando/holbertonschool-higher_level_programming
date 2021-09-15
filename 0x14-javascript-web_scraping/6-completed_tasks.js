@@ -15,6 +15,9 @@ request(url, (err, res, body) => {
     if (task.userId !== user) {
       user++;
       count = 0;
+      if (!task.completed) {
+        continue;
+      }
     }
     if (task.completed) {
       count++;
