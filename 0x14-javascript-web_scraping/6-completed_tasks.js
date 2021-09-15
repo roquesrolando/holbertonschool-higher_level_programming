@@ -8,7 +8,7 @@ request(url, (err, res, body) => {
     return;
   }
   const todo = JSON.parse(body);
-  const dict = {};
+  let dict = {};
   let user = 1;
   let count = 0;
   for (const task of todo) {
