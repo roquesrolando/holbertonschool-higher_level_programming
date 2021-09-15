@@ -7,14 +7,25 @@ request(starwars + process.argv[2], (err, res, body) => {
     console.error(err);
     return;
   }
-  const movie = JSON.parse(body);
-  for (const charac of movie.characters) {
-    request(charac, (err, res, body) => {
-      if (err) {
-        console.error(err);
-      }
-      const character = JSON.parse(body);
-      console.log(character.name);
-    });
-  }
+    const movie = JSON.parse(body);
+    main(movie);
 });
+
+async function main (movie) {
+  for (const charac of movie.characters) {
+    let character = await doRequest(charac);
+    console.log(character);
+  }
+}
+
+function doRequest (charac) {
+  return new Promise(function (resolve, reject) {
+    request(charac, function (err, res, body) {
+      if (!err) {
+        resolve(JSON.parse(body).name);
+      } else {
+        reject(err);
+      }
+    });
+  });
+}
