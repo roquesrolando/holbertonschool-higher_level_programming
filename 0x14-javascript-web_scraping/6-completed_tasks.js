@@ -13,8 +13,14 @@ request(url, (err, res, body) => {
   let count = 0;
   for (const task of todo) {
     if (task.userId !== user) {
-      user++;
-      count = 0;
+      if (task.userId < user) {
+        user--;
+        count = 0;
+      }
+      if (task.userId > user) {
+        user++;
+        count = 0;
+      }
       if (!task.completed) {
         continue;
       }
