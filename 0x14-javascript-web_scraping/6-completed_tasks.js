@@ -1,33 +1,25 @@
 #!/usr/bin/node
 const request = require('request');
+const { argv } = require('process');
 
-request(process.argv[2], (err, res, body) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  const todo = JSON.parse(body);
-  const dict = {};
-  let user = 1;
-  let count = 0;
-  for (const task of todo) {
-    if (task.userId !== user) {
-      if (task.userId < user) {
-        user--;
-        count = 0;
-      }
-      if (task.userId > user) {
-        user++;
-        count = 0;
-      }
-      if (!task.completed) {
-        continue;
-      }
-    }
+const url = argv[2];
+
+request(url, (error, response, body) => {
+  if (error) throw error;
+
+  const dictionary = JSON.parse(body);
+  const tasks = {};
+
+  for (const task of dictionary) {
     if (task.completed) {
-      count++;
-      dict[task.userId] = count;
+      const user = task.userId;
+
+      if (!tasks[user]) {
+        tasks[user] = 0;
+      }
+
+      tasks[user] = tasks[user] + 1;
     }
   }
-  console.log(dict);
+  console.log(tasks);
 });
