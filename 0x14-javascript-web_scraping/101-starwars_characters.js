@@ -7,13 +7,13 @@ request(starwars + process.argv[2], (err, res, body) => {
     console.error(err);
     return;
   }
-    const movie = JSON.parse(body);
-    main(movie);
+  const movie = JSON.parse(body);
+  main(movie);
 });
 
 async function main (movie) {
   for (const charac of movie.characters) {
-    let character = await doRequest(charac);
+    const character = await doRequest(charac);
     console.log(character);
   }
 }
